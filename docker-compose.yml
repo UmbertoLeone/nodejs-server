@@ -1,4 +1,12 @@
 services:
+  postgres:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: togetherfy_dev
+      POSTGRESS_HOST_AUTH_METHOD: trust
+
   backend:
     build: .
     ports:
@@ -8,5 +16,8 @@ services:
       - .:/usr/src/app
       - /usr/src/app/node_modules
     command: yarn start:docker
+    depends_on:
+      - postgres
     environment:
+      DATABASE_URL: postgres://postgres:password@postgres/togetherfy
       PORT: 5000
