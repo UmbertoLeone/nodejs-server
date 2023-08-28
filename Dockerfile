@@ -13,4 +13,4 @@ RUN pnpx prisma generate
 COPY . .
 
 EXPOSE 8080
-CMD ["pnpm", "start"]
+CMD [ "pnpm", "start" ]
