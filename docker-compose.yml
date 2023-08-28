@@ -15,7 +15,7 @@ services:
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
-    command: yarn start:docker
+    command: pnpm start:docker
     depends_on:
       - postgres
     environment:
