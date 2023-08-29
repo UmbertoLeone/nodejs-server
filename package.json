@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && swc ./src -d dist",
-    "db:console": "docker compose run postgres psql -h postgres -U postgres -d togetherfy",
+    "db:console": "docker compose run postgres psql -h postgres -U postgres -d togetherfy_dev",
     "db:migrate": "knex migrate:latest",
     "docker:db:migrate": "docker compose run backend pnpm db:migrate",
     "docker:db:migrate:undo": "docker compose run backend pnpx knex migrate:down",

@@ -4,7 +4,7 @@ services:
     ports:
       - 5432:5432  # enables connecting locally via psql
     environment:
-      POSTGRES_DB: togetherfy
+      POSTGRES_DB: togetherfy_dev
       POSTGRES_HOST_AUTH_METHOD: trust
 
   backend:
@@ -20,5 +20,5 @@ services:
       - /usr/src/app/node_modules
     command: pnpm start:docker
     environment:
-      DATABASE_URL: postgres://postgres@postgres/togetherfy
+      DATABASE_URL: postgres://postgres@postgres/togetherfy_dev
       PORT: 5000
