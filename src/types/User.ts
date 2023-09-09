@@ -1,5 +1,3 @@
-import {Authentication} from "../database/Authentication";
-
 export interface User {
     id: string;
     username: string;
