@@ -24,3 +24,4 @@ services:
       PORT: 5000
       JWT_SECRET: umbertoleonefregamic
       SALT: 13
+      LOG_FILENAME: logger.log

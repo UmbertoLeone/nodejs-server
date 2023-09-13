@@ -1,5 +1,6 @@
-import jwt from "jsonwebtoken";
-import {getUserById} from "../database/User";
+import jwt from 'jsonwebtoken';
+import {getUserById} from '../database/User';
+import {logger} from './Logger';
 
 export const getUserByJwt = (token: string) => {
     try {
@@ -7,6 +8,7 @@ export const getUserByJwt = (token: string) => {
             return getUserById(decoded.id);
         })
     } catch (e) {
-        throw new Error('Invalid token');
+        logger.error(`Error getting user by jwt ${e.message}`);
+        throw new Error(e);
     }
 }

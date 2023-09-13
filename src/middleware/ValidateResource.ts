@@ -1,5 +1,6 @@
-import {Request, Response, NextFunction} from "express";
-import {AnyZodObject} from "zod";
+import {Request, Response, NextFunction} from 'express';
+import {AnyZodObject} from 'zod';
+import {logger} from '../utils/Logger';
 
 const validateResource =
     (schema: AnyZodObject) =>
@@ -11,7 +12,8 @@ const validateResource =
                     params: req.params,
                 });
                 next();
-            } catch (e: any) {
+            } catch (e) {
+                logger.error(`Error validating resources ${e.message}`);
                 return res.status(400).send(e.errors);
             }
         };
