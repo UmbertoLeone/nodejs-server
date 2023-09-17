@@ -12,7 +12,7 @@ This project is a Node.js application that manages a listening queue on Spotify.
 Getting started:
 
 Clone the repository:
-git clone https://github.com/username/projectname.git
+git clone git@github.com:UmbertoLeone/nodejs-server.git
 Install the dependencies:
 pnpm install
 Start the database:
