@@ -4,7 +4,7 @@
 
 **Description:**
 
-This project is a Node.js application that manages a listening queue on Spotify. It is built with TypeScript and uses a Postgres database.
+This project is a Node.js applicatio. It is built with TypeScript and uses a Postgres database.
 
 **Getting started:**
 
