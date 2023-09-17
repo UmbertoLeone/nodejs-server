@@ -1,7 +1,7 @@
 {
   "name": "projectname",
   "version": "1.0.0",
-  "description": "Manage listening queue on Spotify",
+  "description": "Nothing",
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && swc ./src -d dist",
