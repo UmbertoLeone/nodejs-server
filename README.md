@@ -1,4 +1,4 @@
-# Project Name
+# Node Js Server
 
 **Version:** 1.0.0
 
@@ -8,7 +8,7 @@ This project is a Node.js applicatio. It is built with TypeScript and uses a Pos
 
 **Getting started:**
 
-1. Clone the repository: `git clone https://github.com/username/projectname.git`
+1. Clone the repository: `git clone https://github.com/umbertoleone/nodejs-server.git`
 
 2. Install the dependencies: `pnpm install`
 
